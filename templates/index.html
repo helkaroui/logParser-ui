@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block titre %}Home{% endblock %}
+
+
+{% block navigation %}
+  <div class="breadcrumb-holder">
+    <div class="container-fluid">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{url_for('index')}}">Home</a></li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
+
+
+  {% block page %}
+  <!-- Counts Section -->
+  <section class="dashboard-counts section-padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          IMT
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          BNP
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}
